@@ -1,0 +1,6 @@
+# Dest resouces
+.cache
+dist
+
+# Npm or Yarn
+node_modules

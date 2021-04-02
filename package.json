@@ -1,0 +1,51 @@
+{
+  "name": "tvotc",
+  "version": "1.0.0",
+  "description": "THE VALUE OF YOUR CODE",
+  "author": "DavidJones <qowera@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "commit": "git-cz",
+    "lint-stage:format": "prettier --config .prettierrc.js --write --",
+    "lint-stage:lint:ts": "eslint --config .eslintrc.js --ext .ts --fix --",
+    "format": "prettier --config .prettierrc.js --write \"**/*.{js,jsx,ts,tsx,d.ts,vue,md,json,yml,yaml}\"",
+    "lint:ts": "eslint --config .eslintrc.js --ext .ts --fix .",
+    "lint": "npm run lint:ts",
+    "build": "rimraf dist && parcel build ./src/index.html",
+    "start": "parcel ./src/index.html"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "commitizen": "^4.2.3",
+    "commitlint-plugin-i18n": "^0.0.1-alpha.3",
+    "cz-customizable": "^6.3.0",
+    "cz-customizable-i18n-config": "^0.0.1-alpha.2",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.8",
+    "typescript": "^4.2.3"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,d.ts,vue,md,json,yml,yaml}": [
+      "npm run lint-stage:format"
+    ]
+  }
+}

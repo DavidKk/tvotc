@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "declaration": false,
+    "resolveJsonModule": true
+  },
+  "include": ["**/*.ts", "**/*.d.ts"],
+  "typeRoots": ["node_modules/@types"],
+  "exclude": ["node_modules"]
+}
