@@ -21,7 +21,6 @@ const notify = Object.assign(
     notify.nid && clearTimeout(notify.nid)
     nNotify.innerHTML = message
     nNotify.classList.add('show')
-    notify.nid = setTimeout(dismissNotify, 3e3)
   },
   { nid: NaN }
 )
