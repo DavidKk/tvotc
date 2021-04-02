@@ -8,4 +8,6 @@ Test how much your GITHUB project is worth in Xiaomi.😁
 
 测试一下你的 Github 项目在小米公司值多少钱。😁
 
+规则：查找你的项目中出现 `border-radius: 19px` 中的文件数乘以两百万
+
 [Github Page](https://davidkk.github.io/tvotc/)
