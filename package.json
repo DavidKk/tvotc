@@ -46,6 +46,9 @@
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,d.ts,vue,md,json,yml,yaml}": [
       "npm run lint-stage:format"
+    ],
+    "**/*.{ts,tsx}": [
+      "npm run lint-stage:lint:ts"
     ]
   }
 }
