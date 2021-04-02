@@ -6,8 +6,14 @@
 
 Test how much your GITHUB project is worth in Xiaomi.😁
 
+- Reason: Xiaomi, LOGO, design, rounded corners
+- Rule: Find the number of files in `border-radius: 19px` that appear in your project and multiply by two million
+
 测试一下你的 Github 项目在小米公司值多少钱。😁
 
-规则：查找你的项目中出现 `border-radius: 19px` 中的文件数乘以两百万
+- 吃梗：小米，LOGO，设计，圆角
+- 规则：查找你的项目中出现 `border-radius: 19px` 中的文件数乘以两百万
 
 [Github Page](https://davidkk.github.io/tvotc/)
+
+It's just a joke.
