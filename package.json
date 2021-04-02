@@ -11,6 +11,7 @@
     "format": "prettier --config .prettierrc.js --write \"**/*.{js,jsx,ts,tsx,d.ts,vue,md,json,yml,yaml}\"",
     "lint:ts": "eslint --config .eslintrc.js --ext .ts --fix .",
     "lint": "npm run lint:ts",
+    "test": "npm run lint",
     "build": "rimraf dist && parcel build ./src/index.html",
     "start": "parcel ./src/index.html"
   },

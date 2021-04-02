@@ -14,13 +14,13 @@ script:
   - npm run test
 
 before_deploy:
-  - npm run release
+  - npm run build
 
 deploy:
   - provider: pages
     local_dir: dist
     skip_cleanup: true
     github_token:
-      secure: nfwbmS/tR+x/nTktW4uQs5b/w/3GX+TaP0gNfXikpObjoXp4HLiDmF0SRu4IPSzxg4Qoz2kbnhvH+O6VrfLqccoP2qysFJxQkUtKFoDAvmXamvNKEbEMgm6/ZZtDP5FKD1b6NHvB8Z9Zfe4mbsIr857PmAE+nz5pPTtdeeZ7LPryM6MeuEuK34MTMneCkrUMa2XVN3i99aLlJ2ygp031HototObkAcrMXz4GKeV6uu1sRUvfOrFJ22DuzharuFJQOwPXP86/x/z97II0GBDQX0Hn92U4tFqju9jLzUmVGXONAxfski2SONnVY977QWon1RKryEPcNIivWpiznyon1XZVQ3WBaq/+xWMqDY+tf/GE2BVfDaksKsorNEyOqbkDzVCymeiJLetWmImVNceWBKYvUCoNRUqhZLWAvcH/2bHMDOu9PyieCdnbvyQPu2QPq4JFEajApFoMTouBFhdNuTUBWaj3c42F7wEZnaNnGmCpH/kVvH1i27HiSb40Hj6z3adyibsc5vJe5Whh1jSxBy0nPXTIjMH5PyE+tPev9AS2Hf8kgAaSr/yIWbEDHzFKWoy8k9QXNmCOKwC07OL/WTknvcT2jWl0kxEw4atviig3yUGmeeeKLG3Q246+4C5jI7SvzTGQTeNiklUERQAbrN3pvgAdOzdf1/8TOh+foOA=
+      secure: R/O3mCF7pZGf5SVhCCHUeMd47YZq0M1g7zwtDFxZ3pmFcqvssNjl4jOmHLPBG/xwRJu9e0FWlfoP0FHySC7nUxDhXDG0TBBoP0XoGPfMmh7umb8HVfKWOI9N/oNfjn16pQBbp30FgJ3jBoAqd/u9lEVN//f0qiNaLYMJB6qQ08aVg4j8ip8HXybIuoQITIG8acMJcG7ZTUdklyzsqgco70eAmOnW8OXOYpF4kIKrUQKrMeJIF4Wc2jWpvAO/59o9GLM5sXI/fKy2U1jtUTF7i5kUKozKTYBpWfvdwsDmWaeTQcxNVzAQpmDa1h5e4u64VIw8nRxKnIh2bKPjNbx8j4SjilBLX9/XSdetukZnsadm6IosoA5FRiMFSa3cqhw9/FYGTL3lMzFIyu+HGf04yopP4kUxxRSCc5q4ZUIxXPNbajh7mgR7jGDqUwpH8tWn6wP5w/yc+fJRoxUkWpq+rKccwB85G62U3++A/+Ql85DaJtaeI7PbKhipmK6+76/sV2NqurSEs2YDZKyTfDRrykx5avTt7WtcGOpdHhGcvstrcMnQ0T7ySu/FDFpSTl48lNUWDfIacvmr32sl0Rj6xNz/Qa6lg2GocVn/F+26fSBAzTsbQO0JDBuMwS2K++m3iwMg7AsubfDC3EAXSuTt+/CMg1cdZBB78K5v0LXzH4E=
     on:
       branch: master
